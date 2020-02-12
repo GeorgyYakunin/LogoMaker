@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_156sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:background="@drawable/popup">
+
+        <LinearLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:gravity="center"
+                    android:text="@string/exit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="@string/have_save_question"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainlayout"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnno"
+                android:layout_width="106dp"
+                android:layout_height="@dimen/_38sdp"
+                android:background="@drawable/rounded_yellow"
+                android:text="@string/no"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnyes"
+                android:layout_width="106dp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:background="@drawable/rounded_pink"
+                android:text="@string/yes"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

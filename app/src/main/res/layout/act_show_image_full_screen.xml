@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:id="@+id/iv_close_pager"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:src="@drawable/backbtn"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="@dimen/_18sdp"
+                    android:id="@+id/tv_current_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/zero_char"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:textSize="@dimen/_18sdp"
+                    android:id="@+id/tv_total_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/zero_char"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:id="@+id/iv_delete_pager_items"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:src="@drawable/delbtn"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<LinearLayout
+            android:id="@+id/fb_banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" />-->
+
+        <RelativeLayout
+            android:id="@+id/viewpager1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true" />
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/favorite_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="invisible">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:src="@drawable/ic_facebook" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="invisible">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:src="@drawable/ic_instagram" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="invisible">
+
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:src="@drawable/ic_email" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="invisible">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:src="@drawable/ic_whatsapp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/iv_fav"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/iv_unfav"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_pager_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/viewpager1"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_facebook_share"
+                                android:layout_width="@dimen/_42sdp"
+                                android:layout_height="@dimen/_42sdp"
+                                android:background="@null"
+                                android:src="@drawable/ic_facebook" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_instagram_share"
+                                android:layout_width="@dimen/_42sdp"
+                                android:layout_height="@dimen/_42sdp"
+                                android:background="@null"
+                                android:src="@drawable/ic_instagram" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+
+                            <ImageView
+                                android:id="@+id/iv_email_share"
+                                android:layout_width="@dimen/_42sdp"
+                                android:layout_height="@dimen/_42sdp"
+                                android:background="@null"
+                                android:src="@drawable/ic_email" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_whatsup_share"
+                                android:layout_width="@dimen/_42sdp"
+                                android:layout_height="@dimen/_42sdp"
+                                android:background="@null"
+                                android:src="@drawable/ic_whatsapp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_share_image"
+                                android:layout_width="@dimen/_42sdp"
+                                android:layout_height="@dimen/_42sdp"
+                                android:background="@null"
+                                android:src="@drawable/ic_new_share" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_156sdp"
+        android:background="@drawable/popup">
+
+        <EditText
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_24sdp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:id="@+id/textarea"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:hint="Enter your text here" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_below="@+id/textarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="106dp"
+                android:layout_height="@dimen/_38sdp"
+                android:background="@drawable/rounded_yellow"
+                android:text="@string/add"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:id="@+id/cancel"
+                android:layout_width="106dp"
+                android:layout_height="@dimen/_38sdp"
+                android:background="@drawable/rounded_pink"
+                android:text="@string/cancel"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

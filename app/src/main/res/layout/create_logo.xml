@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_6sdp"
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/clearitems"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:src="@drawable/clear" />
+
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:src="@drawable/save" />
+
+
+    </RelativeLayout>
+
+    <com.xiaopo.sticker.StickerView
+        android:id="@+id/sticker_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/abovelayout"
+        android:layout_below="@+id/mainLayout"
+        android:layout_gravity="center"
+        ads:showBorder="true"
+        ads:showIcons="true" />
+
+    <RelativeLayout
+        android:id="@+id/addtextlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible">
+
+        <include
+            layout="@layout/dialog_adding_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/belowlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/allinfolayout"
+        android:layout_width="fill_parent"
+        android:layout_height="86dp"
+        android:layout_above="@+id/abovelayout"
+        android:layout_marginBottom="0dp"
+        android:foregroundGravity="center_vertical"
+        android:scrollbarSize="1.0dip"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/abovelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/logos"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logo_txt"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shapes"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:src="@drawable/shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shape"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lock"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:src="@drawable/glry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gallery"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addtext"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:src="@drawable/text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addfont"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:src="@drawable/fonts" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/background"
+                android:layout_width="@dimen/_72sdp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:src="@drawable/bkgrnd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/background"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/colors"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:src="@drawable/colorsicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colors_txt"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Logo Maker</string>
+
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="zero_char">0</string>
+    <string name="create_new">Create New</string>
+    <string name="my_logo">My Logo</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
+    <string name="have_save_question">You have to save?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="logo_txt">Logo</string>
+    <string name="shape">Shape</string>
+    <string name="gallery">Gallery</string>
+    <string name="text">Text</string>
+    <string name="fonts">Fonts</string>
+    <string name="background">Background</string>
+    <string name="colors_txt">Colors</string>
+    <string name="add_background">Add Background</string>
+    <string name="add_logo">Add Logo</string>
+
+</resources>
